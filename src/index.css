@@ -1,13 +1,92 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .abs-center {
+    @apply absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%];
+  }
+
+  .container {
+    @apply w-11/12 md:w-10/12 lg:w-9/12 mx-auto;
+  }
+
+  .section {
+    @apply relative w-full mt-32 mx-auto;
+  }
+
+  html {
+    @apply text-text_dark;
+  }
+
+  ::-webkit-scrollbar {
+    @apply w-1 h-[5px];
+  }
+
+  /* Track */
+  ::-webkit-scrollbar-track {
+    @apply bg-background_dark;
+  }
+
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    @apply bg-primary rounded-[50px];
+  }
+
+  .bg-theme {
+    @apply bg-background_light dark:bg-background_dark;
+  }
+
+  .text-theme {
+    @apply text-text_light dark:text-text_dark;
+  }
+
+  .border-theme {
+    @apply border border-light dark:border-dark;
+  }
+  .full-theme {
+    @apply bg-background_light dark:bg-background_dark text-text_light dark:text-text_dark border border-light dark:border-dark;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply text-text_light dark:text-text_dark;
+  }
+
+  p {
+    @apply text-grey;
+  }
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: var(--font-roboto);
+}
+
+li {
+  list-style: none;
+}
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+select {
+  -moz-appearance: none; /* Firefox */
+  -webkit-appearance: none; /* Safari and Chrome */
+  appearance: none;
+  padding-right: 5px;
 }
