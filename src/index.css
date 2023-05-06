@@ -90,3 +90,11 @@ select {
   appearance: none;
   padding-right: 5px;
 }
+
+.hidden-scrollbar::-webkit-scrollbar-track {
+  display: none;
+}
+
+.hidden-scrollbar::-webkit-scrollbar-thumb {
+  display: none;
+}

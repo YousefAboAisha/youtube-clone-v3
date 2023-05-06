@@ -1,4 +1,3 @@
-import React from "react";
 import { FaTimesCircle } from "react-icons/fa";
 
 type TagProps = {
@@ -9,7 +8,7 @@ type TagProps = {
 
 function Tag({ title, hasTimes = false, onTimesClicked }: TagProps) {
   return (
-    <div className="relative flex items-center gap-1 text-[12px] full-theme font-normal w-fit px-2 py-1 rounded-xl h-fit uppercase shadow-sm border">
+    <div className="relative dark:bg-[#ffffff2f] full-theme border-none flex items-center gap-1 text-sm w-fit px-3 h-[32px] min-w-fit rounded-md capitalize ">
       {title}
       {hasTimes && (
         <FaTimesCircle

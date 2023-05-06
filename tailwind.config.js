@@ -8,12 +8,14 @@ module.exports = {
         grey: "#3d3d3d",
 
         // Dark Theme variables
-        background_dark: "#282828",
-        text_dark: "#FFF",
+        background_dark: "#000",
+        secondary_dark: "#ffffff1a",
+        text_dark: "#DDDDDD",
 
         // Light theme variables
-        background_light: "#FFF",
-        text_light: "#282828",
+        background_light: "#DDD",
+        secondary_light: "#F1F1F1",
+        text_light: "#000000",
 
         // Paragraph text color
       },
@@ -25,7 +27,7 @@ module.exports = {
 
       borderColor: {
         light: "#181D3150",
-        dark: "#dddddd1a",
+        dark: "#2e2e2e",
       },
 
       keyframes: {

@@ -27,14 +27,14 @@ const Input = forwardRef<HTMLInputElement, InputProps>(
     return (
       <>
         <div className="relative bg-theme rounded-[40px]">
-          <div className="absolute flex justify-center p-2 rounded-l-md items-center left-1 top-[50%] translate-y-[-50%] h-full border-none outline-none text-theme text-theme">
+          <div className="absolute flex justify-center p-2 rounded-l-md items-center left-2 top-[50%] translate-y-[-50%] h-full border-none outline-none text-theme text-theme">
             {icon}
           </div>
 
           <input
             ref={ref}
             {...rest}
-            className={`h-[40px] pl-11 full-theme rounded-[40px] outline-none duration-300 w-full disabled:cursor-not-allowed ${
+            className={`h-[40px] pl-11 full-theme rounded-[40px] text-md outline-none duration-300 w-full disabled:cursor-not-allowed ${
               error ? "!border-[red] animate-shake" : ""
             } ${additionalStyles}`}
             placeholder={placeholder}
